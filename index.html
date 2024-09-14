@@ -10,8 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('https://xatimg.com/image/EdB791Cu9CAU.png') no-repeat center center fixed;
-            background-size: cover;
+            background: transparent; /* Transparent background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,7 +18,8 @@
         }
 
         .player-container {
-            background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+            background: url('https://xatimg.com/image/EdB791Cu9CAU.png') no-repeat center center;
+            background-size: cover;
             width: 600px; /* Reduced by 25% from 800px */
             height: 450px; /* Reduced by 25% from 600px */
             border-radius: 15px;
@@ -50,6 +50,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+            border-radius: 15px;
         }
 
         .logo {
